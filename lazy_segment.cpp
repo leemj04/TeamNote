@@ -1,12 +1,7 @@
 struct LazySeg {
     ll n;
     vector<ll> data, tree, lazy;
-    LazySeg(ll n): n(n), data(n) {
-        ll h = (ll)ceil(log2(n));
-        ll sz = 1ll<<(h+1);
-        tree.resize(sz);
-        lazy.resize(sz);
-    }
+    LazySeg(ll n): n(n), data(n), tree(n<<2), lazy(n<<2) {}
     void seg_init(ll idx, ll s, ll e) {
         if (s == e) {
             tree[idx] = data[s];
