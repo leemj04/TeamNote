@@ -14,7 +14,7 @@ struct PST{
         tree[idx].push_back({0, tree[idx<<1].back().second+tree[idx<<1|1].back().second});
     }
     void seg_update(ll idx, ll s, ll e, ll pos, ll val, ll ord){
-        if(pos<s || pos>e)return; // 완벽히 노드 범위를 벗어남
+        if(pos<s || pos>e) return;
         if(s==e){
             tree[idx].push_back({ord, val});
             return;
@@ -25,7 +25,7 @@ struct PST{
         tree[idx].push_back({ord, tree[idx<<1].back().second+tree[idx<<1|1].back().second});
     }
     ll seg_query(ll idx, ll s, ll e, ll l, ll r, ll ord){
-        if(l>e || r<s)return 0; // 완벽히 노드 범위를 벗어남
+        if(l>e || r<s)return 0;
         if(l<=s && e<=r) {
             return prev(ranges::lower_bound(tree[idx], pll(ord, LLONG_MAX)))->second;
         }
