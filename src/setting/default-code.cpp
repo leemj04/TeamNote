@@ -40,8 +40,6 @@ constexpr bool ndebug = false;
 ll gcd(ll a, ll b){return b?gcd(b,a%b):a;}
 ll lcm(ll a, ll b){if(a&&b)return a*(b/gcd(a,b)); return a+b;}
 ll POW(ll a, ll b, ll rem){ll p=1;a%=rem;for(;b;b>>=1,a=(a*a)% rem)if(b&1)p=(p*a)%rem;return p;}
-pll extended_gcd(ll a, ll b){if(b == 0)return {1, 0};auto t = extended_gcd(b, a % b);return {t.second, t.first - t.second * (a / b)};}
-ll modinverse(ll a, ll m){return (extended_gcd(a, m).first % m + m) % m;}
 
 void setup() {
     if(!ndebug) {

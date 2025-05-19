@@ -1,0 +1,173 @@
+
+\documentclass[9pt,landscape,a4paper,twocolumn]{extarticle}
+
+\setlength{\columnsep}{5pt}
+
+\usepackage[left=0.2cm, right=0.2cm, top=1cm, bottom=1.2cm, headsep=0.2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fontspec}
+\usepackage{kotex}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{comment}
+\usepackage{import}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage[normal]{engord}
+\usepackage[svgnames,table]{xcolor}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{KU - unipass}
+
+\setmonofont[
+    BoldFont = consolab.ttf,
+    ItalicFont = consolai.ttf
+]{consola.ttf}
+\setmainhangulfont{NanumMyeongjo}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\setlength\parskip{0pt}
+\setlength\baselineskip{0pt}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+\definecolor{dkgrey}{RGB}{127, 127, 127}
+
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true,
+    breakindent=1.1em
+%    numbers=left,
+%    numberstyle=\footnotesize\ttfamily\color{dkgrey},
+%    numbersep=5pt
+%    frame=trbl
+}
+
+\lstdefinestyle{mycpp}{
+  language=[GNU]C++,
+  keywordstyle=\color{blue},
+  commentstyle=\itshape\color{purple!40!black},
+  stringstyle=\color{orange},
+}
+\lstdefinestyle{myjava}{
+  language=Java,
+  keywordstyle=\color{blue},
+  commentstyle=\itshape\color{purple!40!black},
+  stringstyle=\color{orange},
+}
+
+\begin{document}
+\tableofcontents
+
+
+\section{Setting}
+
+\subsection{Default code}
+\lstinputlisting[style=mycpp]{src/setting/default-code.cpp}
+
+\section{Math}
+
+\subsection{Extended Euclidean Algorithm}
+\lstinputlisting[style=mycpp]{src/math/extended-euclidean.cpp}
+
+\subsection{Primality Test}
+\lstinputlisting[style=mycpp]{src/math/primality-test.cpp}
+
+\subsection{Integer Factorization (Pollard's rho)}
+\lstinputlisting[style=mycpp]{src/math/pollard-rho.cpp}
+
+\subsection{Chinese Remainder Theorem}
+\lstinputlisting[style=mycpp]{src/math/crt.cpp}
+
+\subsection{Query of nCr mod M in $O(Q+M)$}
+\lstinputlisting[style=mycpp]{src/math/binomial.cpp}
+
+\subsection{pelindrome number}
+\lstinputlisting[style=mycpp]{src/math/pelindrome.cpp}
+
+\subsection{Catalan, Derangement, Partition, 2nd Stirling}
+$C_n = \frac{1}{n + 1} \binom{2n}{n}, C_0 = 1, C_{n + 1} = \sum_{i=0}^{n} C_i C_{n-i},  C_{n + 1} = \frac{2(2n+1)}{n+2} C_n$
+
+$D_n = (n-1)(D_{n-1} + D_{n-2})=n! \sum_{i=1}^n \frac{(-1)^{i+1}}{i!}$
+
+$ P(n) =\sum_{k \in \mathbb{Z}\setminus\{0\}}^{}
+    (-1)^{k+1} P(n-k(3k-1)/2) $
+
+$= P(n-1) + P(n-2)-P(n-5)-P(n-7) +P(n-12) +P(n-15) - P(n-22) -\cdots$
+
+$P(n,k)=P(n-1,k-1)+P(n-k,k)$, $S(n,k)=S(n-1,k-1)+k\cdot S(n-1,k)$
+
+\subsection{Matrix Operations}
+\lstinputlisting[style=mycpp]{src/math/matrix-operations.cpp}
+
+\subsection{Gaussian Elimination}
+\lstinputlisting[style=mycpp]{src/math/gaussian.cpp}
+
+\subsection{Permutation and Combination}
+\lstinputlisting[style=mycpp]{src/math/permutation.cpp}
+\lstinputlisting[style=mycpp]{src/math/combination.cpp}
+
+\subsection{Lifting The Exponent}
+For any integers $x$, $y$ a positive integer $n$, and a prime number $p$ such that $p \nmid x$ and $p \nmid y$, the following statements hold:
+
+\begin{itemize}
+    \item When $p$ is odd:
+    \begin{itemize}
+        \item If $p \mid x-y$, then $\nu_p(x^n-y^n) = \nu_p(x-y)+\nu_p(n)$.
+        \item If $n$ is odd and $p \mid x+y$, then $\nu_p(x^n+y^n) = \nu_p(x+y)+\nu_p(n)$.
+    \end{itemize}
+    \item When $p = 2$:
+    \begin{itemize}
+        \item If $2 \mid x-y$ and $n$ is even, then $\nu_2(x^n-y^n) = \nu_2(x-y)+\nu_2(x+y)+\nu_2(n)-1$.
+        \item If $2 \mid x-y$ and $n$ is odd, then $\nu_2(x^n-y^n) = \nu_2(x-y)$.
+        \item Corollary:
+        \begin{itemize}
+            \item If $4 \mid x-y$, then $\nu_2(x+y)=1$ and thus $\nu_2(x^n-y^n) = \nu_2(x-y)+\nu_2(n)$.
+        \end{itemize}
+    \end{itemize}
+    \item For all $p$:
+    \begin{itemize}
+        \item If $\gcd(n,p) = 1$ and $p \mid x-y$, then $\nu_p(x^n-y^n) = \nu_p(x-y)$.
+        \item If $\gcd(n,p) = 1$, $p \mid x+y$ and $n$ odd, then $\nu_p(x^n+y^n) = \nu_p(x+y)$.
+    \end{itemize}
+\end{itemize}
+
+\section{Data Structure}
+\subsection{Lazy Segment Tree}
+\lstinputlisting[style=mycpp]{src/data-structure/lazy-segment-tree.cpp}
+
+\subsection{Persistent Segment Tree}
+\lstinputlisting[style=mycpp]{src/data-structure/persistent-segment-tree.cpp}
+
+\section{Graph}
+
+\subsection{Dijkstra}
+\lstinputlisting[style=mycpp]{src/graph/dijkstra.cpp}
+
+\subsection{LCA}
+\lstinputlisting[style=mycpp]{src/graph/lca.cpp}
+
+\subsection{Centroid Decomposition}
+\lstinputlisting[style=mycpp]{src/graph/centroid-decomposition.cpp}
+
+\subsection{Minimum Spanning Tree}
+\lstinputlisting[style=mycpp]{src/graph/mst.cpp}
+
+\subsection{Offline Dynamic Connectivity}
+\lstinputlisting[style=mycpp]{src/graph/offline-dynamic-connectivity.cpp}
+
+\section{String}
+
+\subsection{KMP}
+\lstinputlisting[style=mycpp]{src/string/kmp.cpp}
+
+\subsection{Z Algorithm}
+\lstinputlisting[style=mycpp]{src/string/z.cpp}
+
+\end{document}
