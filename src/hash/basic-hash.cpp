@@ -16,4 +16,6 @@ struct chash {
 
 int main() {
     unordered_map<pll, ll, chash> a;
+    a[{1, 2}] = 3;
+    cout << a[{1, 2}] << '\n'; // Output: 3
 }
