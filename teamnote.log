@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.5.19)  20 MAY 2025 11:38
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.5.19)  20 MAY 2025 11:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -629,23 +629,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (./src/math/matrix-operations.cpp) (./src/math/gaussian.cpp [3])
 (./src/math/permutation.cpp) (./src/math/combination.cpp)
 (./src/data-structure/lazy-segment-tree.cpp)
-(./src/data-structure/persistent-segment-tree.cpp [4]) (./src/dp/lis.cpp)
-(./src/graph/dijkstra.cpp) (./src/graph/lca.cpp)
-(./src/graph/centroid-decomposition.cpp [5]) (./src/graph/mst.cpp)
-(./src/graph/offline-dynamic-connectivity.cpp [6]) (./src/string/kmp.cpp)
-(./src/string/z.cpp) (./src/geometry/ccw.cpp) (./src/hash/basic-hash.cpp)
-[7] (./teamnote.aux)
+(./src/data-structure/persistent-segment-tree.cpp [4])
+(./src/data-structure/scc.cpp) (./src/dp/lis.cpp) (./src/graph/dijkstra.cpp)
+(./src/graph/lca.cpp [5]) (./src/graph/centroid-decomposition.cpp)
+(./src/graph/mst.cpp) (./src/graph/offline-dynamic-connectivity.cpp [6])
+(./src/string/kmp.cpp) (./src/string/z.cpp) (./src/geometry/ccw.cpp)
+(./src/hash/basic-hash.cpp [7]) [8
+
+] (./teamnote.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 12944 strings out of 476191
- 230241 string characters out of 5812072
- 1558574 words of memory out of 5000000
- 33406 multiletter control sequences out of 15000+600000
+ 12955 strings out of 476191
+ 230410 string characters out of 5812072
+ 1570602 words of memory out of 5000000
+ 33414 multiletter control sequences out of 15000+600000
  474356 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,12n,80p,1197b,2709s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on teamnote.pdf (7 pages).
+Output written on teamnote.pdf (8 pages).
