@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.5.19)  4 JUN 2025 10:20
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.5.19)  4 JUN 2025 14:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -612,10 +612,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-(./src/setting/default-code.cpp
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+(./src/setting/default-code.cpp [1
 
 ]
 
@@ -627,25 +624,28 @@ LaTeX Font Warning: Font shape `TU/UnDotum.ttf(1)/m/it' undefined
 [2]) (./src/math/pelindrome.cpp) (./src/math/matrix-mul-pow.cpp)
 (./src/math/matrix-operations.cpp) (./src/math/gaussian.cpp [3])
 (./src/math/permutation.cpp) (./src/math/combination.cpp)
-(./src/math/integer-partition.cpp) (./src/data-structure/lazy-segment-tree.cpp)
-[4] (./src/data-structure/persistent-segment-tree.cpp)
-(./src/data-structure/scc.cpp) (./src/data-structure/fenwick-tree.cpp)
-(./src/dp/lis.cpp) (./src/graph/dijkstra.cpp [5]) (./src/graph/lca.cpp)
-(./src/graph/centroid-decomposition.cpp) (./src/graph/mst.cpp [6])
-(./src/graph/offline-dynamic-connectivity.cpp) (./src/string/kmp.cpp)
-(./src/string/z.cpp) (./src/string/lcs.cpp [7]) (./src/string/trie.cpp)
-(./src/geometry/ccw.cpp) (./src/hash/basic-hash.cpp) [8] (./teamnote.aux)
+(./src/math/integer-partition.cpp) (./src/math/xudyh-sieve.cpp)
+(./src/data-structure/lazy-segment-tree.cpp [4])
+(./src/data-structure/persistent-segment-tree.cpp)
+(./src/data-structure/scc.cpp) (./src/data-structure/fenwick-tree.cpp) [5]
+(./src/dp/lis.cpp) (./src/graph/dijkstra.cpp) (./src/graph/lca.cpp)
+(./src/graph/centroid-decomposition.cpp) [6] (./src/graph/mst.cpp)
+(./src/graph/offline-dynamic-connectivity.cpp) (./src/string/kmp.cpp [7])
+(./src/string/z.cpp) (./src/string/lcs.cpp) (./src/string/trie.cpp)
+(./src/geometry/ccw.cpp) (./src/hash/basic-hash.cpp [8]) [9
+
+] (./teamnote.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13026 strings out of 476191
- 231492 string characters out of 5812072
- 1556714 words of memory out of 5000000
- 33473 multiletter control sequences out of 15000+600000
+ 13037 strings out of 476191
+ 231657 string characters out of 5812072
+ 1539742 words of memory out of 5000000
+ 33481 multiletter control sequences out of 15000+600000
  474356 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,12n,80p,1197b,2709s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on teamnote.pdf (8 pages).
+Output written on teamnote.pdf (9 pages).
