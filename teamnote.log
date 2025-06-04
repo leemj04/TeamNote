@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.5.19)  4 JUN 2025 14:28
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.5.19)  4 JUN 2025 15:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -632,7 +632,9 @@ LaTeX Font Warning: Font shape `TU/UnDotum.ttf(1)/m/it' undefined
 (./src/graph/centroid-decomposition.cpp) [6] (./src/graph/mst.cpp)
 (./src/graph/offline-dynamic-connectivity.cpp) (./src/string/kmp.cpp [7])
 (./src/string/z.cpp) (./src/string/lcs.cpp) (./src/string/trie.cpp)
-(./src/geometry/ccw.cpp) (./src/hash/basic-hash.cpp [8]) [9
+(./src/geometry/ccw.cpp) (./src/geometry/line-intersection.cpp [8])
+(./src/geometry/point-in-nonconvex-polygon.cpp) (./src/hash/basic-hash.cpp)
+[9
 
 ] (./teamnote.aux)
 
@@ -640,10 +642,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13037 strings out of 476191
- 231657 string characters out of 5812072
- 1539742 words of memory out of 5000000
- 33481 multiletter control sequences out of 15000+600000
+ 13075 strings out of 476191
+ 232302 string characters out of 5812072
+ 1539834 words of memory out of 5000000
+ 33513 multiletter control sequences out of 15000+600000
  474356 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,12n,80p,1197b,2709s stack positions out of 5000i,500n,10000p,200000b,80000s

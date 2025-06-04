@@ -35,5 +35,7 @@
 \contentsline {subsection}{\numberline {6.4}Trie}{8}{}%
 \contentsline {section}{\numberline {7}Geometry}{8}{}%
 \contentsline {subsection}{\numberline {7.1}CCW}{8}{}%
-\contentsline {section}{\numberline {8}Hash}{8}{}%
-\contentsline {subsection}{\numberline {8.1}Basic Hash}{8}{}%
+\contentsline {subsection}{\numberline {7.2}Line Intersection}{8}{}%
+\contentsline {subsection}{\numberline {7.3}Point in Nonconvex Polygon}{9}{}%
+\contentsline {section}{\numberline {8}Hash}{9}{}%
+\contentsline {subsection}{\numberline {8.1}Basic Hash}{9}{}%
