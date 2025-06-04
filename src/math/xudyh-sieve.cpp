@@ -1,4 +1,6 @@
 // S(N) = sum of k = 1..N, phi(k) with O(N^(3/4)) complexity
+#define MAX 500003
+
 ll phi[MAX];
 std::unordered_map<int, ll> mp;
 
